@@ -1,0 +1,157 @@
+body {
+    background-color: #9db9d8;
+    color: black;
+    font-family: sans-serif;
+}
+
+.main-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+}
+
+.navigation {
+    background-color: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    margin: 5px;
+    padding: 10px 20px;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.header {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2.5em 6em;
+    padding: 10px 20px 0 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.header button {
+    background-color: dodgerblue;
+    color: white;
+    font-size: 1rem;
+    padding: 5px 20px;
+    border: 0px;
+    border-radius: 1em;
+    margin: 0px 2px;
+}
+
+.header-search {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    padding: 10px;
+}
+
+
+.header-usertop {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    text-align: right;
+    padding: 10px;
+}
+
+.header-greeting {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    padding: 10px;
+}
+
+.header-greeting h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.header-greeting div {
+    padding: 0;
+    margin: 0 5px;
+}
+
+.header-buttons {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    text-align: right;
+    padding: 3.2em 0 0 0;
+}
+
+.content {
+    display: grid;
+    
+    grid-template-columns: 3fr 1fr;
+}
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 5px;
+}
+
+.project-item {
+    background-color: azure;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+.project-item h2 {
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+.right-content-column {
+    margin: 5px;
+} 
+
+.announcement-list {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+    
+}
+
+/* .announcement-list h2 {
+    padding: 0;
+    margin: 20px 0 10px 0;
+} */
+
+.trending-list {
+    background-color: azure;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.trending-item {
+    padding: 5px;
+}
